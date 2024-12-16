@@ -46,9 +46,9 @@ app.post("/createUser",async (req,res) => {
     .catch(err => res.json(err))
 })
 
+const PORT = 5001
 
-
-app.listen(5001, (req,res)=> {
-    console.log("server is running on");
+app.listen(PORT,'0.0.0.0', (req,res)=> {
+    console.log("server is running on", `${PORT}`);
     
 })
